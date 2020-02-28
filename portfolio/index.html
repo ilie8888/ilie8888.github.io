@@ -1,0 +1,25 @@
+---
+layout: default
+title: Portfolio
+---
+  
+<div class="content-portfolio">
+  <h2>Portfolio</h2>
+ 
+  <p>Check out my images below!</p>
+</div>
+ 
+<div class="entries">
+  {% for post in site.posts %}
+ 
+  <div class="img_card">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" />
+      <h3>{{ post.title }}</h3>
+    </a>
+  </div>
+ 
+  {% endfor %}
+</div>
+
+<div class="clearfix"></div>
